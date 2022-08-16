@@ -25,8 +25,8 @@ public class Assignment {
 		Producer producer = new Producer(sharedQueue);
 		Printer printer = new Printer(sharedQueue);
 		ExecutorService executorService = Executors.newFixedThreadPool(2);
-		executorService.submit(producer::produceEven);
-		executorService.submit(producer::produceOdd);
+		executorService.submit(producer::producerOne);
+		executorService.submit(producer::producerTwo);
 		
 		ScheduledExecutorService printerExecutor = Executors.newScheduledThreadPool(1);
 		// Printer will be triggered every twenty seconds (initial delay - 5 seconds)
