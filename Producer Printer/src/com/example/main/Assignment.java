@@ -29,6 +29,7 @@ public class Assignment {
 		executorService.submit(producer::produceOdd);
 		
 		ScheduledExecutorService printerExecutor = Executors.newScheduledThreadPool(1);
+		// Printer will be triggered every twenty seconds (initial delay - 5 seconds)
 		printerExecutor.scheduleAtFixedRate(printer::print, 5, 20, TimeUnit.SECONDS);
 	}
 
