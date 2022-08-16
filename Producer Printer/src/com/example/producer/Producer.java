@@ -44,7 +44,7 @@ public class Producer {
 	}
 
 	/**
-	 * Produce odd.
+	 * Produce multiples of 5 starting from 10.
 	 */
 	public void produceOdd() {
 		int i = 5;
