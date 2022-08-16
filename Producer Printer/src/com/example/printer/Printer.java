@@ -20,7 +20,7 @@ public class Printer {
 	}
 
 	/**
-	 * Prints the.
+	 * Prints the produced output for 3 seconds only.
 	 */
 	public void print() {
 		long end = System.currentTimeMillis() + (3 * 1000);
