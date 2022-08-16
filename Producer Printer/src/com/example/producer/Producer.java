@@ -21,9 +21,9 @@ public class Producer {
 	}
 
 	/**
-	 * Produce even.
+	 * Produces even numbers.
 	 */
-	public void produceEven() {
+	public void producerOne() {
 		int i = 1;
 		Random random = new Random();
 		while (true) {
@@ -46,7 +46,7 @@ public class Producer {
 	/**
 	 * Produce multiples of 5 starting from 10.
 	 */
-	public void produceOdd() {
+	public void producerTwo() {
 		int i = 5;
 		Random random = new Random();
 		while (true) {
